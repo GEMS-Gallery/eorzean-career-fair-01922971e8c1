@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFXIV Job Comparison Blog</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>FFXIV Job Comparison Blog</h1>
+    </header>
+    <main>
+        <section id="job-list">
+            <h2>Available Jobs</h2>
+            <ul id="jobs"></ul>
+        </section>
+        <section id="job-details">
+            <h2>Job Details</h2>
+            <div id="selected-job"></div>
+        </section>
+        <section id="add-job">
+            <h2>Add New Job</h2>
+            <form id="job-form">
+                <input type="text" id="job-name" placeholder="Job Name" required>
+                <input type="text" id="job-role" placeholder="Role" required>
+                <textarea id="job-strengths" placeholder="Strengths" required></textarea>
+                <textarea id="job-weaknesses" placeholder="Weaknesses" required></textarea>
+                <button type="submit">Add Job</button>
+            </form>
+        </section>
+    </main>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

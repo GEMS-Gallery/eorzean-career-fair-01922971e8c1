@@ -1,0 +1,12 @@
+type Job = 
+ record {
+   name: text;
+   role: text;
+   strengths: text;
+   weaknesses: text;
+ };
+service : {
+  addJob: (text, text, text, text) -> ();
+  getAllJobs: () -> (vec Job) query;
+  getJob: (text) -> (opt Job) query;
+}
